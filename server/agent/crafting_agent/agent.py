@@ -1,11 +1,11 @@
-from llm_client import llm_client
+from llm_client import LLMClient
 from actions import refocus_tasks, maintain_tasks, relax_plan
 from exception import agenterror
 
 
 class GoalCraftAgent:
     def __init__(self):
-        self.llm = llm_client()
+        self.llm = LLMClient()
 
     def _build_prompt(self, state: dict) -> str:
         return f"""

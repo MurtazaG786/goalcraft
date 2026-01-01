@@ -1,8 +1,11 @@
+from dataclasses import dataclass
 from typing import Literal
 import os
 
 decision_type=Literal["maintain_plan","refocus","stretch_plan","relax_plan"]
 confidence_type=Literal["high","medium","low"]
+
+@dataclass
 class responseschema:
     message:str
     decision:decision_type
