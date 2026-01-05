@@ -15,13 +15,13 @@ GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjus
 - Adaptive task re-planning
 
 ## Tech Stack
-- Frontend: React
+- Frontend: React,Vite,TypeScript
 - Backend: Node.js, Express
 - Database: MongoDB
-- Agent Logic: Rule-based (extendable to AI)
+- Agent Logic: Rule-based ,format based(extendable to AI)
 
 ## Project Status
-🚧 In development (MVP)
+🚧 In development (MVP) 45% completed..⚒️
 
 ## Future Enhancements
 - AI-powered task generation
