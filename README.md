@@ -13,6 +13,7 @@ GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjus
 - Automatic task breakdown
 - Progress tracking
 - Adaptive task re-planning
+- Gain intrest by earning Exp after completing task
 
 ## Tech Stack
 - Frontend: React,Vite,TypeScript
