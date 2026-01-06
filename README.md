@@ -20,6 +20,7 @@ GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjus
 - Database: MongoDB
 - Agent Logic: Rule-based ,format based(extendable to AI)
 
+
 ## Project Status
 🚧 In development (MVP) 45% completed..⚒️
 
@@ -27,3 +28,4 @@ GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjus
 - AI-powered task generation
 - Natural language feedback
 - User analytics dashboard
+-Game Like Exp gaining ...
