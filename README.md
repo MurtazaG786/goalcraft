@@ -31,3 +31,4 @@ GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjus
 - User analytics dashboard
 -Game Like Exp gaining ...
 -will add rewards after completing the steps of goals
+-will have special hidden task which can boost your moral
