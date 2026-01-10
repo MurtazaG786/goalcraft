@@ -7,7 +7,7 @@ People often set ambitious goals but struggle to break them into clear steps and
 
 ## Solution
 GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjusts tasks instead of relying on static to-do lists.
-
+our product provide them innovative way to complete their goals with cool experience of achievements
 ## Core Features (Planned)
 - Create and manage long-term goals
 - Automatic task breakdown
