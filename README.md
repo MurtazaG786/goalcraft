@@ -23,12 +23,12 @@ GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjus
 
 
 ## Project Status
-🚧 In development (MVP) 45% completed..⚒️
+🚧 In development (MVP) 55% completed..⚒️
 
 ## Future Enhancements
 - AI-powered task generation
 - Natural language feedback
 - User analytics dashboard
 -Game Like Exp gaining ...
--will add rewards after completing the steps of goals
 -will have special hidden task which can boost your moral
+-user-friendly experience with working enhancement 
