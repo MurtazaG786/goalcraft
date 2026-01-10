@@ -17,7 +17,7 @@ our product provide them innovative way to complete their goals with cool experi
 
 ## Tech Stack
 - Frontend: React,Vite,TypeScript
-- Backend: Node.js, Express
+- Backend: Node.js, Express,fastapi
 - Database: MongoDB
 - Agent Logic: Rule-based ,format based(extendable to AI)
 
