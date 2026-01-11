@@ -15,7 +15,7 @@ our product provide them innovative way to complete their goals with cool experi
 - Adaptive task re-planning
 
 ## Tech Stack
-- Frontend: React,Vite,TypeScript
+- Frontend: React,Vite,TypeScript, tailwind 
 - Backend: Node.js, Express,fastapi
 - Database: MongoDB
 - Agent Logic: Rule-based ,format based(extendable to AI)
