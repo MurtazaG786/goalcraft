@@ -11,7 +11,7 @@ our product provide them innovative way to complete their goals with cool experi
 ## Core Features (Planned)
 - Create and manage long-term goals
 - Automatic task breakdown
-- Adaptive task re-planning
+
 - progress tracking 
 ## Tech Stack
 - Frontend: React,Vite,TypeScript, tailwind 
