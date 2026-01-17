@@ -18,7 +18,6 @@ our product provide them innovative way to complete their goals with cool experi
 - Backend: Node.js, Express,fastapi
 - Database: MongoDB
 - Agent Logic: Rule-based ,format based(extendable to AI)
--can be used for goal crafting
 
 ## Project Status
 🚧 In development (MVP) 55% completed..⚒️
