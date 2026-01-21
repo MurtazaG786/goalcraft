@@ -11,7 +11,6 @@ our product provide them innovative way to complete their goals with cool experi
 ## Core Features (Planned)
 - Create and manage long-term goals
 - Automatic task breakdown
-- gaming experience for your goals 
 ## Tech Stack
 - Frontend: React,Vite,TypeScript, tailwind 
 - Backend: Node.js, Express,fastapi
