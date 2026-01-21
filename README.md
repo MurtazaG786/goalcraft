@@ -25,6 +25,5 @@ our product provide them innovative way to complete their goals with cool experi
 - AI-powered task generation
 - Natural language feedback
 - User analytics dashboard
--Game Like Exp gaining ...
 -will have special hidden task which can boost your moral
 -user-friendly experience with working enhancement 
