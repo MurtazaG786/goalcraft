@@ -6,7 +6,7 @@ GoalCraft is an agent-assisted goal planning system that helps users turn high-l
 People often set ambitious goals but struggle to break them into clear steps and stay consistent over time.
 
 ## Solution
-GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjusts tasks instead of relying on static to-do lists.
+GoalCraft introduces a reasoning layer that dynamically plans, tracks, and adjusts tasks instead of relying on static to-do lists.with a cool achievment grabbing experience.
 our product provide them innovative way to complete their goals with cool experience of achievements
 ## Core Features (Planned)
 - Create and manage long-term goals
