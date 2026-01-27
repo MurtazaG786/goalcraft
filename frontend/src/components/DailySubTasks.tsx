@@ -1,0 +1,142 @@
+import { useState } from "react";
+import { Check, Clock, Zap, Bot, ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+interface SubTask {
+  id: string;
+  title: string;
+  description: string;
+  xpReward: number;
+  estimatedTime: string;
+  completed: boolean;
+  aiGenerated: boolean;
+}
+
+interface DailySubTasksProps {
+  tasks: SubTask[];
+  currentDay: number;
+  phaseName: string;
+  onCompleteTask: (id: string) => void;
+}
+
+const DailySubTasks = ({ tasks, currentDay, phaseName, onCompleteTask }: DailySubTasksProps) => {
+  const [expandedTask, setExpandedTask] = useState<string | null>(null);
+  const completedCount = tasks.filter((t) => t.completed).length;
+
+  return (
+    <div className="card-gaming rounded-2xl p-6 border border-border/50">
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <Bot className="w-5 h-5 text-primary" />
+            <span className="text-sm text-primary font-medium">AI Generated</span>
+          </div>
+          <h2 className="font-display text-xl font-semibold">
+            Day {currentDay} Tasks
+          </h2>
+          <p className="text-sm text-muted-foreground">{phaseName}</p>
+        </div>
+        <div className="text-right">
+          <div className="text-2xl font-display font-bold text-foreground">
+            {completedCount}/{tasks.length}
+          </div>
+          <div className="text-xs text-muted-foreground">Completed</div>
+        </div>
+      </div>
+
+      <div className="space-y-3">
+        {tasks.map((task, index) => (
+          <div
+            key={task.id}
+            className={cn(
+              "rounded-xl border transition-all duration-300",
+              task.completed
+                ? "bg-success/5 border-success/30"
+                : "bg-card border-border/50 hover:border-primary/50"
+            )}
+          >
+            <div
+              className="flex items-center gap-4 p-4 cursor-pointer"
+              onClick={() => setExpandedTask(expandedTask === task.id ? null : task.id)}
+            >
+              {/* Completion Button */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (!task.completed) onCompleteTask(task.id);
+                }}
+                className={cn(
+                  "w-7 h-7 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0",
+                  task.completed
+                    ? "bg-success border-success"
+                    : "border-muted-foreground/50 hover:border-primary hover:bg-primary/10"
+                )}
+              >
+                {task.completed && <Check className="w-4 h-4 text-success-foreground" />}
+              </button>
+
+              {/* Task Number */}
+              <div
+                className={cn(
+                  "w-8 h-8 rounded-lg flex items-center justify-center text-sm font-display font-bold",
+                  task.completed
+                    ? "bg-success/20 text-success"
+                    : "bg-muted text-muted-foreground"
+                )}
+              >
+                {index + 1}
+              </div>
+
+              {/* Task Content */}
+              <div className="flex-1 min-w-0">
+                <h3
+                  className={cn(
+                    "font-medium truncate",
+                    task.completed && "line-through text-muted-foreground"
+                  )}
+                >
+                  {task.title}
+                </h3>
+                <div className="flex items-center gap-3 mt-1">
+                  <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <Clock className="w-3 h-3" />
+                    <span>{task.estimatedTime}</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-xs text-accent">
+                    <Zap className="w-3 h-3" />
+                    <span>+{task.xpReward} XP</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Expand Arrow */}
+              <ChevronRight
+                className={cn(
+                  "w-5 h-5 text-muted-foreground transition-transform",
+                  expandedTask === task.id && "rotate-90"
+                )}
+              />
+            </div>
+
+            {/* Expanded Content */}
+            {expandedTask === task.id && (
+              <div className="px-4 pb-4 pt-0">
+                <div className="ml-[4.5rem] pl-4 border-l-2 border-border">
+                  <p className="text-sm text-muted-foreground">{task.description}</p>
+                  {task.aiGenerated && (
+                    <div className="flex items-center gap-1.5 mt-3 text-xs text-primary">
+                      <Bot className="w-3.5 h-3.5" />
+                      <span>Generated by AI based on your goal</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default DailySubTasks;
