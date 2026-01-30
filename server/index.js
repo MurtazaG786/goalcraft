@@ -6,7 +6,7 @@ app=express()
 app.use(cors());
 app.use(express.json());
 app.get("/",()=>{
-  console.log("server is working well")
+  console.log("server is working good")
 })
 
 port=process.env.PORT || 5000 ;
