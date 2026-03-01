@@ -21,7 +21,7 @@ our product provide them innovative way to complete their goals with cool experi
 🚧 In development (MVP) 55% completed..⚒️
 
 ## Future Enhancements
-- AI-powered task generation
+- AI-powered task
 - Natural language feedback
 - User analytics dashboard
 -will have special hidden task which can boost your moral
